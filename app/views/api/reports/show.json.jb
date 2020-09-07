@@ -1,0 +1,8 @@
+{
+  id: @report.id,
+  name: @report.name,
+  description: @report.description,
+  screenshot: @report.screenshot,
+  suggested_fix: @report.suggested_fix,
+  url: @report.url,
+}

@@ -13,7 +13,7 @@ class Api::ReportsController < ApplicationController
       status: params[:status],
       screenshot: params[:screenshot]
     )
-    report.save
+    @report.save
     render "show.json.jb"
   end
 
