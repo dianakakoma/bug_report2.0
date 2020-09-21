@@ -1,5 +1,6 @@
 @reports.map do |report|
   {
+    id: report.id,
     name: report.name,
     description: report.description,
     screenshot: report.screenshot, 

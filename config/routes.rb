@@ -12,5 +12,7 @@ Rails.application.routes.draw do
     get "/reports/:id" => "reports#show"
     patch "/reports/:id" => "reports#update"
     delete "/reports/:id" => "reports#destroy"
+    get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: 'public/index.html')]] } 
+  
   end
 end
